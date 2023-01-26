@@ -27,7 +27,9 @@ public class EmployeService {
 
     public List<Employe> getAllEmployees(){
 
-        return employeRepository.findAll();
+        List<Employe> emp =employeRepository.findAll();
+        System.out.println(" users getting from mocking "+ emp);
+        return emp;
     }
 
     public Employe getEmployeById(int id){
